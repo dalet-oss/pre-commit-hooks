@@ -10,9 +10,6 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument('filenames', nargs='*', help='Filenames to check.')
     args = parser.parse_args(argv)
 
-    if args.input == None:
-        return 1
-
     retval = 0
     for filename in args.filenames:
         try:
