@@ -22,7 +22,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                         pattern = f'<!-- block {key} -->'
                         match = re.search(pattern, doc)
                         if not bool(match):
-                            print(f'Found un-documented variable {key}, please update {args.output} file.')
+                            print(f'Found un-documented variable {key}, please update API.md file.')
                             retval += 1
         except SyntaxError as e:
             print(e)
