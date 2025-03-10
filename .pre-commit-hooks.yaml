@@ -3,6 +3,5 @@
     description: ensures Ansible collection public API is properly documented.
     entry: api-checker
     language: python
-    types: [yaml]
     stages: [pre-commit, pre-push, manual]
     minimum_pre_commit_version: 3.2.0
